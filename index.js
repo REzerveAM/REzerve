@@ -201,4 +201,3 @@ form.addEventListener('submit', (event) => {
     });
 });
 
-toLowerCase
