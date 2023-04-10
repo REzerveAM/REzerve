@@ -4,7 +4,7 @@ for (let g7 = 0; g7 < conts.length; g7++) {
         conts[g7].classList.toggle('bacel-em');
     });
 }
-
+ 
 
 
 const goTopBtn = document.querySelector(".go-top");

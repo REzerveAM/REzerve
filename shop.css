@@ -393,7 +393,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-right: 30px;
 }
 
-.nixuya {
+.space-between-prace {
     display: flex;
 }
 
@@ -507,4 +507,6 @@ nav a:hover {
         padding: 20px;
     }
 }
+
+
 

@@ -63,7 +63,7 @@ window.addEventListener('scroll', () => {
     } else {
         document.querySelector('.go-top').classList.remove('go-top-lav');
     }
-console.log(window.scrollY,lastScroll)
+// console.log(window.scrollY,lastScroll)
     if(window.scrollY > 400 && window.scrollY > lastScroll ) {
         //scroll down
         header.classList.add('hide');
@@ -185,18 +185,3 @@ const langArr = {
        }
    }
    
-const apranqner = document.querySelectorAll('.card');
-const form = document.querySelector('.input-cont');
-const searchInput = document.querySelector('.input');
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const searchText =  searchInput.value;
-    apranqner.forEach((apranq) => {
-        const gin = apranq.querySelector('.shor-name')
-        if (gin.innerText.toLowerCase().includes(searchText.toLowerCase())) {
-            apranq.style.display = 'block';
-        } else {
-            apranq.style.display = 'none';
-        }
-    });
-});
