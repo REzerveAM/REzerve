@@ -24,7 +24,7 @@ const cards = [{
     category: categories.bags,
     price: '5000 AMD',
     photoLink: 'bananka white .png',
-    key: ['sumka', 'payusak']
+    key: ['sumka', 'payusak', 'pori harmaranq', 'bumajnik', 'portman', 'psti sunka', 'poqr sunka']
 },
 {
     name: 'Arirpods - case',
@@ -52,21 +52,21 @@ const cards = [{
     category: categories.bags,
     price: '15000 AMD',
     photoLink: 'Shuffle bag.png',
-    key: ['sumka', 'payusak']
+    key: ['sumka', 'payusak', 'sunka']
 },
 {
     name: 'Bag',
     category: categories.bags,
     price: '12000 AMD',
     photoLink: 'bag black.png',
-    key: ['sumka', 'payusak']
+    key: ['sumka', 'payusak', 'sunka']
 },
 {
     name: 'Hoodie',
     category: categories.hoodie,
     price: '7500 AMD',
     photoLink: 'black-hudy.png',
-    key: ['Shor', 'mayka', 'hudi', 'verx']
+    key: ['Shor', 'mayka', 'hudi', 'verx', 'taq shor',]
 },
 {
     name: 'Sneakers',
