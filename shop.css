@@ -371,9 +371,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px; 
-    
+    margin-bottom: 20px;   
 }
 
 .input-price {
@@ -508,6 +506,8 @@ nav a:hover {
     }
     .names {
         margin-left: 0;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
