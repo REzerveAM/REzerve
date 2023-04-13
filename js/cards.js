@@ -5,6 +5,9 @@ const categories = {
     bags: 'Bags',
     accessories: 'Accessories',
     hoodie: 'Hoodies',
+    trousers: 'Trousers',
+    shorts: 'Shorts',
+    sweatshirt : 'Sweatshirt'
 }
 
 const cards = [{
@@ -77,6 +80,13 @@ const cards = [{
 },
 
 ];
+
+/* <div class="lox">
+<span class="nav-name">Trousers</span>
+<span class="nav-name">Shorts</span>
+<span class="nav-name">Accessories</span>
+</div> */
+
 
 console.log()
 

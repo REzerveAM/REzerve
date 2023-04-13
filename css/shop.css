@@ -538,5 +538,29 @@ nav a:hover {
     }
 }
 
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    overflow: auto;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
 
+.modal_cont{
+background-color: white;
+position: relative;
+width: 400px;
+margin: 50px auto;
+transform: perspective(400px) translateY(100%) rotateX(-45deg);
+transition: all 0.5s ease;
+}
 
+.modal_buttonbar{
+    position: absolute;
+top: 150;
+}
