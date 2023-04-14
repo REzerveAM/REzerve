@@ -378,7 +378,7 @@
 }
 
 .re-nkar {
-    background-image: url(img-shor/cf450dc1f23fd5795a833230475565c5.jpg);
+    background-image: url(../img-shor/cf450dc1f23fd5795a833230475565c5.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -421,7 +421,7 @@
 }
 
 .footer-img {
-    background-image: url(img/fotter.jpeg);
+    background-image: url(../img/fotter.jpeg);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -33,7 +33,6 @@
     background-color: rgba(79, 79, 79, 0.2);
 }
 
-
 .header {
     position: fixed;
     width: 100%;
@@ -295,6 +294,7 @@ input[type="search"]::-webkit-search-results-decoration {
     background-size: cover;
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card-nkar {
