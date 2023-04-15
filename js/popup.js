@@ -2,6 +2,8 @@ function showModal(cardId) {
     const cardInfo = cards.find(card => card.id === cardId);
     console.log(cardInfo);
 
+    document.querySelectorAll('.left-panel img').forEach(item => item.onmouseenter = (event) => maxImg.src = event.target.src);
+
     const html = `
         <div class="modal__container">
             <div class="modal__body">
@@ -10,15 +12,31 @@ function showModal(cardId) {
                     <a href="#">
                         &times;
                     </a>
+                    <section class="grid-1">
+                    <div class="left-panel">
+                        <img src="img-shor/${cardInfo.photoLink}" alt="">
+                        <img src="img-shor/${cardInfo.photoLink}" alt="">
+                        <img src="img-shor/air pods pro back.png" alt="">
+                        <img src="img-shor/${cardInfo.photoLink}" alt="">
+                        <img src="img-shor/${cardInfo.photoLink}" alt="">
+                    </div>
+                    </section>
                 </div>
                 <div class="modal__content">
-                <img src="img-shor/${cardInfo.photoLink}" alt="">
-                    ${cardInfo.price}<br>
-                   
+                <img class="modal__img" src="img-shor/${cardInfo.photoLink}" alt="">
+                <br>
+                <hr>
+                <br>
+                <div class="modal__price">
+                    ${cardInfo.price}<br>   
+                </div>
 
-
+                <div class="modal__class">
+                ${cardInfo.key}<br>
+                </div>
+                    <br>
                     <div class="modal__buttonbar">
-                        <button class='buttonbar__ok'>Ok</button>
+                        <button class='buttonbar__ok'>Buy</button>
                     </div>
                 </div>
             </div>
@@ -58,6 +76,8 @@ function showModal(cardId) {
 
     show();
 }
+
+
 
 function addClickEventToCards() {
     const showBtn = document.querySelectorAll('.popup-modal');

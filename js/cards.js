@@ -7,8 +7,8 @@ const categories = {
     hoodie: 'Hoodies',
     trousers: 'Trousers',
     shorts: 'Shorts',
-    sweatshirt : 'Sweatshirt'
-    
+    sweatshirt: 'Sweatshirt'
+
 }
 
 const cards = [{
@@ -48,7 +48,7 @@ const cards = [{
     category: categories.accessories,
     price: '3000 AMD',
     photoLink: 'iphone - case.png',
-    key: ['chxol', 'chexol', 'patyan', 'heraxos']
+    key: ['chxol', 'chexol', 'patyan', 'heraxos', 'pupul']
 },
 {
     id: '5',
@@ -157,7 +157,6 @@ function boss() {
 
         if ((apranq.name.toLowerCase().includes(searchValue.toLowerCase()) || apranq.key.includes(searchValue.toLowerCase())) && (erik >= fromValue && erik <= uptoValue)) {
             selected.push(apranq)
-
         }
 
     })

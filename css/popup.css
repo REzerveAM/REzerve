@@ -43,36 +43,47 @@
    
   }
   
-  
   .modal__body {
     border-radius: 15px;
-    background-color: rgba(88, 88, 88, 0.836);
+    background-color: rgba(255, 255, 255);
     position: absolute;
     padding: 1em;
 
   }
-  
+
+  .modal__price{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .modal__class{
+    font-size: small;
+  }
   .modal__buttonbar {
-    background-color: #fcfcfc; /* Green */
+    background-color: #000000; /* Green */
     border: none;
     border-radius: 15px;
+    
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    
   }
 
   .buttonbar__ok{
     background: transparent;
     border: none;
     outline: none;
+    color: white;
   }
   
-  .visible {
+  .modal__content .modal__img{
+    width: 100%;
+    }
     
+
+  .visible {
     visibility: visible;
     opacity: 1;
     -webkit-transition: all 0.5s ease;
@@ -101,4 +112,28 @@
       width: 100%;
     }
   }
+
+  .grid-1 {
+    display: grid;
+    grid-template-areas: 
+    "left-panel right-panel";
+      /* grid-template-columns:  1fr 150% ; */
+
+}
+
+.grid-1 img {
+    display: block;
+    max-width: 70%;
+    height:50px ;
+    width: 90px;
+    
+   max-height: 450px;
+    margin: 20px 10%;
+}
+
+.left-panel {
+  justify-content: flex-start;
+    grid-area: left-panel;
+}
+
  /* sourceMappingURL=modal.css.map */
