@@ -5,13 +5,10 @@ for (let g7 = 0; g7 < conts.length; g7++) {
     });
 }
 
-
-
 const goTopBtn = document.querySelector(".go-top");
 
 goTopBtn.addEventListener("click", goTop);
 window.addEventListener("scroll", trackScroll);
-
 
 function trackScroll() {
     const scrolled = window.scrollY;
@@ -44,17 +41,6 @@ for (let anchor of anchors) {
     })
 }
 
-// let header = document.querySelector('.js-header');
-// let headerH = document.querySelector('.js-header').clientHeight;
-
-// document.onscroll = function () {
-//     let scroll = window.scrollY;
-
-//     if (scroll > headerH)
-//         header.classList.add('fixed');
-//     document.body.style.paddingTop = headerH + "px";
-// }
-
 const header = document.querySelector('.header');
 let lastScroll = 0;
 window.addEventListener('scroll', () => {
@@ -63,17 +49,15 @@ window.addEventListener('scroll', () => {
     } else {
         document.querySelector('.go-top').classList.remove('go-top-lav');
     }
-// console.log(window.scrollY,lastScroll)
-    if(window.scrollY > 400 && window.scrollY > lastScroll ) {
+
+    if (window.scrollY > 400 && window.scrollY > lastScroll) {
         //scroll down
         header.classList.add('hide');
-    }
-    else if(window.scrollY < lastScroll){
+    } else if (window.scrollY < lastScroll) {
         //scroll up
         header.classList.remove('hide');
-
     }
-lastScroll = window.scrollY;
+    lastScroll = window.scrollY;
 });
 
 
@@ -94,94 +78,83 @@ burgerItems.forEach((item) => {
 });
 
 const langArr = {
-    'man':{
-       'en' : 'Home',
-       'ru' :'Главный'
+    'man': {
+        'en': 'Home',
+        'ru': 'Главный'
     },
-    'manb':{
-        'en' : 'Home',
-        'ru' :'Главный'
-     },
-     girl:{
-       en: 'About',
-       ru: 'О нас'
-     },
-     girlb:{
+    'manb': {
+        'en': 'Home',
+        'ru': 'Главный'
+    },
+    girl: {
         en: 'About',
-       ru: 'О нас'
-     },
-    kids:{
+        ru: 'О нас'
+    },
+    girlb: {
+        en: 'About',
+        ru: 'О нас'
+    },
+    kids: {
         en: 'Services',
         ru: 'Сервис'
     },
-    kidsb:{
+    kidsb: {
         en: 'Services',
         ru: 'Сервис'
     },
-    logout:{
+    logout: {
         en: 'Contact',
         ru: 'Контакт'
     },
-    logoutb:{
+    logoutb: {
         en: 'Contact',
-        ru: 'Контакт' 
+        ru: 'Контакт'
     },
-   }
-   
-   
-   
-   
-   
-   const en = document.querySelector('#en');
-   const ru = document.querySelector('#ru');
-   const enb = document.querySelector('#enb');
-   const rub = document.querySelector('#rub');
-   const allLang = ['en', 'ru'];
-   
-   
-   en.addEventListener('click', () =>{
-       changeURLLanguage('en')
-   } );
-   
-   ru.addEventListener('click', () =>{
-       changeURLLanguage('ru')
-   } );
-   
-   enb.addEventListener('click', () =>{
-       changeURLLanguage('en')
-   
-   } );
-   
-   rub.addEventListener('click', () =>{
-       changeURLLanguage('ru')
-   } );
-   
-   
-   function changeURLLanguage(lang) {
-       if(window.location.hash !== ('#'+ lang)){
-           location.href = window.location.pathname + '#' + lang;
-           location.reload();
-       }
-      
-   }
-   
-   function changeLanguage() {
-       let hash = window.location.hash;
-       hash = hash.substring(1);
-       console.log(hash);
-       if (!allLang.includes(hash)) {
-           location.href = window.location.pathname + '#en';
-           location.reload();
-       }
-   
-       // document.querySelector('title').innerHTML = langArr['unit'][hash];
-       // document.querySelector('.lng-chip').innerHTML = langArr['chip'][hash];
-       for (let key in langArr) {
-           let elem = document.querySelector('.lng-' + key);
-           if (elem) {
-               elem.innerHTML = langArr[key][hash];
-           }
-   
-       }
-   }
-   
+}
+
+const en = document.querySelector('#en');
+const ru = document.querySelector('#ru');
+const enb = document.querySelector('#enb');
+const rub = document.querySelector('#rub');
+const allLang = ['en', 'ru'];
+
+en.addEventListener('click', () => {
+    changeURLLanguage('en')
+});
+
+ru.addEventListener('click', () => {
+    changeURLLanguage('ru')
+});
+
+enb.addEventListener('click', () => {
+    changeURLLanguage('en')
+
+});
+
+rub.addEventListener('click', () => {
+    changeURLLanguage('ru')
+});
+
+
+function changeURLLanguage(lang) {
+    if (window.location.hash !== ('#' + lang)) {
+        location.href = window.location.pathname + '#' + lang;
+        location.reload();
+    }
+}
+
+function changeLanguage() {
+    let hash = window.location.hash;
+    hash = hash.substring(1);
+    if (!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#en';
+        location.reload();
+    }
+    for (let key in langArr) {
+        let elem = document.querySelector('.lng-' + key);
+        if (elem) {
+            elem.innerHTML = langArr[key][hash];
+        }
+    }
+}
+
