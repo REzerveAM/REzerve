@@ -95,6 +95,3 @@ function addClickEventToCards() {
 addClickEventToCards();
 
 
-// const select = document.querySelector('select');
-
-
