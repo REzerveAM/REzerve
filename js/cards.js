@@ -16,21 +16,21 @@ const cards = [{
     name: 'T-Shirt',
     category: categories.t_shirt,
     price: '6000 AMD',
-    photoLink: 'mayka_erexa.png',
+    photoLink: ['mayka_erexa.png'],
     key: ['Shor', 'mayka'],
 }, {
     id: '1',
     name: 'Zip Hoodie',
     category: categories.z_hoodie,
     price: '8500 AMD',
-    photoLink: 'unisex white .png',
+    photoLink: ['unisex white .png'],
     key: ['Shor', 'mayka']
 }, {
     id: '2',
     name: 'Bananka',
     category: categories.bags,
     price: '5000 AMD',
-    photoLink: 'bananka white .png',
+    photoLink: ['bananka white .png'],
     key: ['sumka', 'payusak', 'pori harmaranq', 'bumajnik', 'portman', 'psti sunka', 'poqr sunka']
 },
 {
@@ -38,7 +38,7 @@ const cards = [{
     name: 'Arirpods - case',
     category: categories.accessories,
     price: '3500 AMD',
-    photoLink: 'airpods pro .png',
+    photoLink: ['airpods pro .png', 'air pods pro back.png', 'air pods pro left.png','air pods pro right.png',],
 
     key: ['chxol', 'chexol', 'patyan', 'case', 'erik']
 },
@@ -47,7 +47,7 @@ const cards = [{
     name: 'Iphone-case',
     category: categories.accessories,
     price: '3000 AMD',
-    photoLink: 'iphone - case.png',
+    photoLink: ['iphone - case.png', 'case - blue.png', 'case - black.png', 'iphone case right.png'],
     key: ['chxol', 'chexol', 'patyan', 'heraxos', 'pupul']
 },
 {
@@ -55,7 +55,7 @@ const cards = [{
     name: 'Shoper',
     category: categories.bags,
     price: '3500 AMD',
-    photoLink: 'bag.png',
+    photoLink: ['bag.png'],
     key: ['sumka', 'payusak', 'toprak']
 },
 {
@@ -63,7 +63,7 @@ const cards = [{
     name: 'Bag',
     category: categories.bags,
     price: '15000 AMD',
-    photoLink: 'Shuffle bag.png',
+    photoLink: ['Shuffle bag.png'],
     key: ['sumka', 'payusak', 'sunka']
 },
 {
@@ -71,7 +71,7 @@ const cards = [{
     name: 'Bag',
     category: categories.bags,
     price: '12000 AMD',
-    photoLink: 'bag black.png',
+    photoLink: ['bag black.png'],
     key: ['sumka', 'payusak', 'sunka']
 },
 {
@@ -79,7 +79,7 @@ const cards = [{
     name: 'Hoodie',
     category: categories.hoodie,
     price: '7500 AMD',
-    photoLink: 'black-hudy.png',
+    photoLink: ['black-hudy.png','black hudy - back.png','pink hudi.png','pink hudi-bacl.png','seri hudi.png','seri hudi back.png'],
     key: ['Shor', 'mayka', 'hudi', 'verx', 'taq shor',]
 },
 {
@@ -87,7 +87,7 @@ const cards = [{
     name: 'Sneakers',
     category: categories.sneakers,
     price: '11500 AMD',
-    photoLink: 'sneakers.png',
+    photoLink: ['sneakers.png'],
     key: ['kalosh', 'sapok', 'botas', 'koshik', 'galosh'],
 },
 
@@ -118,7 +118,7 @@ function render(apranqner) {
     contImg.innerHTML = ''
     apranqner.forEach(card => {
         let html = `<div class="card popup-modal" id="card_${card.id}">
-        <img class="card-nkar" src="img-shor/${card.photoLink}" alt="">
+        <img class="card-nkar" src="img-shor/${card.photoLink[0]}" alt="">
         <div class="space-between-prace">
             <span class="shor-name">${card.name}</span>
             <span class="gin">${card.price}</span> 
