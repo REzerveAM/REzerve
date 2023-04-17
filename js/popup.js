@@ -1,39 +1,39 @@
 function showModal(cardId) {
     const cardInfo = cards.find(card => card.id === cardId);
     console.log(cardInfo);
-    let nkarner = cardInfo.photoLink.map((nkar)=>{
+    let nkarner = cardInfo.photoLink.map((nkar) => {
         return `<img src="img-shor/${nkar}" alt="">`
     });
     const html = `
         <div class="modal__container">
             <div class="modal__body">
-            // anun
+                <!-- anun -->
                 <div class="modal__header">${cardInfo.name}</div>
                 <div class="modal__close">
-                    <a href="#">
-                        &times;
-                    </a>
+                    <a href="#">&times;</a>
                     <section class="grid-1">
-                    <div class="left-panel">
-                    // poqr nkar
-                ${nkarner.join('')}
-                    </div>
+                        <div class="left-panel">
+                            <!-- poqr nkar -->
+                            ${nkarner.join('')}
+                        </div>
                     </section>
                 </div>
                 <div class="modal__content">
-                // mec nkar
-                <img class="modal__img" src="img-shor/${cardInfo.photoLink[0]}" alt="">
-                <br>
-                <hr>
-                <br>
-                // gin
-                <div class="modal__price">
-                    ${cardInfo.price}<br>   
-                </div>
-                // havayi paner
-                <div class="modal__class">
-                ${cardInfo.key}<br>
-                </div>
+                    <!-- mec nkar -->
+                    <img class="modal__img" src="img-shor/${cardInfo.photoLink[0]}" alt="">
+                    <br>
+                    <hr>
+                    <br>
+
+                    <!-- gin -->
+                    <div class="modal__price">
+                        ${cardInfo.price}<br>   
+                    </div>
+
+                    <!-- havayi paner -->
+                    <div class="modal__class">
+                        ${cardInfo.key}<br>
+                    </div>
                     <br>
                     <div class="modal__buttonbar">
                         <button class='buttonbar__ok'>Buy</button>
@@ -69,7 +69,7 @@ function showModal(cardId) {
         modalElement.classList.add('visible');
         document.body.classList.add('modal__visible');
     }
-    
+
     okBtn.addEventListener('click', () => {
         hide();
     });
@@ -78,8 +78,6 @@ function showModal(cardId) {
 
     show();
 }
-
-
 
 function addClickEventToCards() {
     const showBtn = document.querySelectorAll('.popup-modal');
