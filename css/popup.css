@@ -115,10 +115,7 @@
 
   .grid-1 {
     display: grid;
-    grid-template-areas: 
-    "left-panel right-panel";
-      /* grid-template-columns:  1fr 150% ; */
-
+    grid-template-areas: "left-panel right-panel";
 }
 
 .grid-1 img {
