@@ -1,7 +1,7 @@
 function showModal(cardId) {
     const cardInfo = cards.find(card => card.id === cardId);
     console.log(cardInfo);
-    let nkarner = cardInfo.photoLink.map((nkar)=>{
+    let nkarner = cardInfo.photoLink.map((nkar) => {
         return `<img src="img-shor/${nkar}" alt="">`
     });
     const html = `
@@ -33,7 +33,7 @@ function showModal(cardId) {
                 </div>
                     <br>
                     <div class="modal__buttonbar">
-                    <a href="https://www.instagram.com/rezerve.shop">
+                    <a target="_blank" href="https://www.instagram.com/rezerve.shop">
                         <button class='buttonbar__ok'>Buy</button>
                         </a>
                         </div>
@@ -68,7 +68,7 @@ function showModal(cardId) {
         modalElement.classList.add('visible');
         document.body.classList.add('modal__visible');
     }
-    
+
     okBtn.addEventListener('click', () => {
         hide();
     });
@@ -77,8 +77,6 @@ function showModal(cardId) {
 
     show();
 }
-
-
 
 function addClickEventToCards() {
     const showBtn = document.querySelectorAll('.popup-modal');
@@ -92,8 +90,3 @@ function addClickEventToCards() {
 }
 
 addClickEventToCards();
-
-
-// const select = document.querySelector('select');
-
-

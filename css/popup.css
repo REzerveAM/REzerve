@@ -115,6 +115,7 @@
 
   .grid-1 {
     display: grid;
+    grid-template-areas: "left-panel right-panel";
     grid-template-areas: 
     "left-panel right-panel";
     width: 80px;
