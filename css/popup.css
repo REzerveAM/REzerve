@@ -129,6 +129,7 @@
     height: 50px;  
     max-height: 450px;
     cursor: pointer;
+    object-fit: contain;
     margin: 20px 10%;
 }
 
@@ -140,7 +141,6 @@
     overflow-x: hidden;
     overflow-y: auto;
     max-height: 100%;
-    /* max-width: ; */
     margin-right: 32px;
 }
 
